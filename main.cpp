@@ -18,13 +18,13 @@ int main ()
   //November
   int mo = 11;
   for(int dy=27;dy<=30;dy++){
-    printCandles(dy,mo,dow);
+    printCandles(dy,mo);
   }
   
   //Dezember
   mo=12;
   for(int dy=1;dy<=24;dy++){
-    printCandles(dy,mo,dow);
+    printCandles(dy,mo);
   }
   
 	cout << endl;
