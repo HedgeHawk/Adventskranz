@@ -1,3 +1,6 @@
+//Build: g++ main.cpp -o advent
+//Test:  ./advent
+
 #include "advent.h"
 #include<iostream> 
 #include<iomanip>
