@@ -6,9 +6,10 @@ using namespace std;
 void printCandles(int dy, int mo){
   int a = adventstag(dy, mo);
   cout << mo << " " <<std::setfill('0') << std::setw(2)<< dy << " " <<std::setfill('0') << std::setw(2)<< a <<" ";
-	for(int dow = 1; dow <= 7; dow++){
-		cout << candles(a,dow);
-	}
+  for(int dow = 1; dow <= 7; dow++){
+    cout << candles(a,dow);
+  }
+  cout << endl;
 }
 
 int main () 
@@ -26,8 +27,6 @@ int main ()
   for(int dy=1;dy<=24;dy++){
     printCandles(dy,mo);
   }
-  
-	cout << endl;
-
+	
   return 0; 
 } 
