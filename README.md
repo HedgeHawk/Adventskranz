@@ -69,3 +69,13 @@ int candles(int a, int dow){
   return (a-dow+7)/7;
 }
 ```
+
+## Code
+Header-only Library: advent.h
+
+## Test
+Example: main.cpp
+```
+g++ main.cpp -o advent
+./advent
+```
