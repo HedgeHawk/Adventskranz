@@ -50,11 +50,22 @@ Die Tabelle zeigt für alle möglichen Kombinationen aus Monat, Tag und Wochenta
 ## Die Adventskranz-Formel
 Zur Berechnung der Kerzenzahl aus dem Tag dy des Monats mo wird zunächst als Hilfsgröße der Adventstag a für die hier relevanten 28 Tage vor Heiligabend eingeführt.
 ```
-mo=11: a=dy-26
-mo=12: a=dy+4
+int adventstag(int dy, int mo){
+switch (mo)
+  {
+    case 11: //November
+      return dy - 26;
+    case 12: //Dezember
+      return dy + 4;
+    default:
+      return 0;
+  }
+}
 ```
 
 Mit Hilfe des Adventstags a und dem Wochentag dow (Sonntag=1) kann die Kerzenzahl k bestimmt werden.
 ```
-k=floor((a-dow+7)/7)
+int candles(int a, int dow){
+  return (a-dow+7)/7;
+}
 ```
